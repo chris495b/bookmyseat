@@ -26,13 +26,27 @@ module.exports = {
         loader: 'file-loader'
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "babel-loader"
+          },
+          {
+            loader: "react-svg-loader",
+            options: {
+              jsx: true // true outputs JSX tags
+            }
+          }
+        ]
+      },
+      {
         test : /\.jsx?/,
         include : SRC_DIR,
         loader : 'babel-loader',      
         query: {
           presets: ['react', 'es2015']
        }
-      }
+      },
     ]
   },
   plugins: [
