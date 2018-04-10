@@ -31,14 +31,14 @@ class Stadium extends Component {
             <rect zoom-control="main" height="95.687786" width="126.854046" y="105.769235" x="206.180359" />
             <rect zoom-control="left" height="79.962273" width="57.448662" y="205.119891" x="142.930951" />
             <g seating-area="A" zoom-target="left" onClick={this.zoomMe.bind(this)}>
-              <rect selected seat height="14.560438" width="13" y="206.529233" x="158.181482" />
+              <rect selected seat="1" height="14.560438" width="13" y="206.529233" x="158.181482" />
               <rect locked seat="2" height="14.560438" width="13" y="206.529233" x="172.049076" />
-              <rect locked="reserved" seat height="14.560438" width="13" y="206.475552" x="185.969085" />
+              <rect locked="reserved" seat="3" height="14.560438" width="13" y="206.475552" x="185.969085" />
             </g>
             <g seating-area="B" zoom-target="right" onClick={ this.zoomMe.bind(this) } >
-              <rect seat height="14.560438" width="13" y="206.529233" x="354.251359" l />
-              <rect seat height="14.560438" width="13" y="206.529233" x="368.118954"  />
-              <rect seat height="14.560438" width="13" y="206.475552" x="382.038963"  />
+              <rect seat="1" height="14.560438" width="13" y="206.529233" x="354.251359" l />
+              <rect seat="2" height="14.560438" width="13" y="206.529233" x="368.118954"  />
+              <rect seat="3" height="14.560438" width="13" y="206.475552" x="382.038963"  />
             </g>
           <g seating-area="C" zoom-target="main" onClick={this.zoomMe.bind(this)} >
             <rect seat="1" class="reserved" height="14.560438" width="13" y="106.863558" x="207.345423"  />

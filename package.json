@@ -28,6 +28,8 @@
     "server-dev": "nodemon server/index.js"
   },
   "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
     "webpack-cli": "^2.0.14"
   }
 }
