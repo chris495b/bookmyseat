@@ -13,9 +13,10 @@ module.exports = {
   },
   module : {
     rules : [
+      
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
       },
       {
         test: /\.png$/,
@@ -24,20 +25,6 @@ module.exports = {
       {
         test: /\.jpg/,
         loader: 'file-loader'
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "babel-loader"
-          },
-          {
-            loader: "react-svg-loader",
-            options: {
-              jsx: true // true outputs JSX tags
-            }
-          }
-        ]
       },
       {
         test : /\.jsx?/,

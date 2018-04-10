@@ -1,0 +1,35 @@
+svg {
+    border: 1px solid #000;
+    background-color: #00bfff;
+  }
+  
+  [stage] {
+    fill: #000;
+  }
+  
+  [zoom-control] {
+    cursor: pointer;
+    fill: #efefef;
+  }
+  
+  [seat] {
+    fill: #efefef;
+  }
+  
+  [seat][locked] {
+    fill: #888888;
+  }
+  
+  [seat][locked="reserved"] {
+    fill: #00bfff;
+  }
+  
+  [seat][selected] {
+    fill: #ffe100;
+  }
+  
+  [seat]:not([selected]):not([locked]):hover {
+    fill: #ffffff;
+    cursor: pointer;
+  }
+  
